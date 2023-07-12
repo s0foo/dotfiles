@@ -1,1 +1,12 @@
+# General
 alias v="vim"
+alias l="ls -hl"
+
+# Taskwarrior
+alias t="task"
+alias ta="task add"
+alias tcns="task pro:CNS"
+
+# Xcode
+alias xcleandd="rm -rf $HOME/Library/Developer/Xcode/DerivedData"
+alias xcleansim="xcrun simctl erase all"
