@@ -1,0 +1,9 @@
+syntax on
+colorscheme habamax
+set shiftwidth=4
+set tabstop=4
+set ruler
+set number
+set relativenumber
+set cursorline
+"set hlsearch
