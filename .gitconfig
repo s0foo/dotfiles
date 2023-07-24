@@ -1,2 +1,4 @@
 [alias]
+	c = commit
+	co = checkout
 	st = status
