@@ -1,11 +1,18 @@
 # General
-alias v="vim"
 alias l="ls -hl"
+alias memo="vim $HOME/.memo.txt"
+alias scratch="vim $HOME/.scratch.txt"
+alias v="vim"
 
 # Taskwarrior
 alias t="task"
 alias ta="task add"
+alias tcal="task calendar"
 alias tcns="task pro:CNS"
+
+# Work
+alias wmemo="vim $HOME/work/memo.txt"
+alias wtm="vim $HOME/work/tm.txt"
 
 # Xcode
 alias xcleandd="rm -rf $HOME/Library/Developer/Xcode/DerivedData"
