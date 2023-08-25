@@ -1,4 +1,8 @@
 [alias]
 	c = commit
 	co = checkout
+	d = diff
+	l = log
+	r = restore
 	st = status
+	up = pull
