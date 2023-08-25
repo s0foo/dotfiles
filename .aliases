@@ -3,6 +3,7 @@ alias l="ls -hl"
 alias memo="vim $HOME/.memo.txt"
 alias scratch="vim $HOME/.scratch.txt"
 alias v="vim"
+alias valiases="vim $HOME/.aliases"
 
 # Taskwarrior
 alias t="task"
