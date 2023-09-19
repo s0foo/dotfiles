@@ -14,6 +14,8 @@ alias tcns="task pro:CNS"
 # Work
 alias wmemo="vim $HOME/work/memo.txt"
 alias wtm="vim $HOME/work/tm.txt"
+alias wwork="cd $HOME/work"
+alias wgit="cd $HOME/work/git"
 
 # Xcode
 alias xcleandd="rm -rf $HOME/Library/Developer/Xcode/DerivedData"
