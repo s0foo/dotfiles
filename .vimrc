@@ -6,4 +6,5 @@ set ruler
 set number
 set relativenumber
 set cursorline
-"set hlsearch
+set hlsearch
+set backspace=indent,eol,start
