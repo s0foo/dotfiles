@@ -20,3 +20,11 @@ alias wgit="cd $HOME/work/git"
 # Xcode
 alias xcleandd="rm -rf $HOME/Library/Developer/Xcode/DerivedData"
 alias xcleansim="xcrun simctl erase all"
+
+# Dev
+string2hex() {
+echo -n $1 | od -A n -t x1 | sed 's/ *//g'
+}
+string2base64() {
+echo $1 | base64
+}
