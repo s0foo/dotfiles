@@ -1,4 +1,7 @@
 [alias]
+	a = add
+	adog = log --all --decorate --oneline --graph
+	b = branch
 	c = commit
 	co = checkout
 	d = diff
@@ -6,3 +9,5 @@
 	r = restore
 	st = status
 	up = pull
+[core]
+	editor = vim
