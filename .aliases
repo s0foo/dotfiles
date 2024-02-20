@@ -1,25 +1,30 @@
 # General
-alias l="ls -hl"
-alias memo="vim $HOME/.memo.txt"
-alias scratch="vim $HOME/.scratch.txt"
-alias v="vim"
-alias valiases="vim $HOME/.aliases"
+alias l='ls -hl'
+alias memo='vim $HOME/.memo.txt'
+alias scratch='vim $HOME/.scratch.txt'
+alias v='vim'
+alias valiases='vim $HOME/.aliases'
+
+# Motions
+alias -- -='cd -'
+alias ..='cd ..'
+alias ...='cd ../..'
 
 # Taskwarrior
-alias t="task"
-alias ta="task add"
-alias tcal="task calendar"
-alias tcns="task pro:CNS"
+alias t='task'
+alias ta='task add'
+alias tcal='task calendar'
+alias tcns='task pro:CNS'
 
 # Work
-alias wmemo="vim $HOME/work/memo.txt"
-alias wtm="vim $HOME/work/tm.txt"
-alias wwork="cd $HOME/work"
-alias wgit="cd $HOME/work/git"
+alias wmemo='vim $HOME/work/memo.txt'
+alias wtm='vim $HOME/work/tm.txt'
+alias wwork='cd $HOME/work'
+alias wgit='cd $HOME/work/git'
 
 # Xcode
-alias xcleandd="rm -rf $HOME/Library/Developer/Xcode/DerivedData"
-alias xcleansim="xcrun simctl erase all"
+alias xcleandd='rm -rf $HOME/Library/Developer/Xcode/DerivedData'
+alias xcleansim='xcrun simctl erase all'
 
 # Dev
 string2hex() {
