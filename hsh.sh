@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Dotfiles
+cp .aliases $HOME/.
+cp .vimrc $HOME/.
+
 # Git configuration
 cp config/.gitconfig $HOME/.
 git config --global user.name "s0foo"
