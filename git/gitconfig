@@ -1,0 +1,16 @@
+[user]
+        email = my@email.com
+        name = My Name
+[alias]
+        a = add
+        adog = log --all --decorate --oneline --graph
+        b = branch
+        c = commit
+        co = checkout
+        up = pull
+        l = log
+        d = diff
+        r = restore
+        st = status
+[core]
+        editor = nvim
