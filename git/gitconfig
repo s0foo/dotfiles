@@ -11,3 +11,5 @@
         up = pull
 [core]
         editor = nvim
+[init]
+        defaultBranch = main
