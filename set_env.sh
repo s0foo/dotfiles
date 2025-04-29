@@ -1,5 +1,7 @@
 #!/bin/bash
 
+CURRENT_PATH=$(pwd)
+
 # requirements
 sudo apt install -y \
     build-essential \
@@ -10,11 +12,13 @@ sudo apt install -y \
     ninja-build
 
 # git
-cp git/gitconfig $HOME/.gitconfig
+cp $CURRENT_PATH/git/gitconfig $HOME/.gitconfig
 
 # neovim
-cp -r nvim $HOME/.config/.
+cp -r $CURRENT_PATH/nvim $HOME/.config/.
 git clone -b stable --depth 1 https://github.com/neovim/neovim $HOME/neovim
 cd $HOME/neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
+cd $CURRENT_PATH
+rm -rf $HOME/neovim
