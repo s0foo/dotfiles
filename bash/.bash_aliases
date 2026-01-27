@@ -1,5 +1,6 @@
 alias cl="clear"
 alias le="less"
+alias oups="cd && clear"
 alias ls="ls -lhF --color"
 alias sl="ls -lhF --color"
 alias t="task"
