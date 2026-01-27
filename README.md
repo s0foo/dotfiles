@@ -18,6 +18,7 @@ adduser <username> sudo
 sudo apt install \
     emacs \
     git \
+    htop \
     mutt \
     neovim \
     pari-gp \
