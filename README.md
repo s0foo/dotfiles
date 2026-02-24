@@ -22,6 +22,7 @@ sudo apt install \
     mutt \
     neovim \
     pari-gp \
+    ripgrep \
     taskwarrior \
     tmux
 ```
