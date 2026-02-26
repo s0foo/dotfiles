@@ -17,6 +17,7 @@ adduser <username> sudo
 ```bash
 sudo apt install \
     emacs \
+    fzf \
     git \
     htop \
     mutt \
