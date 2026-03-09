@@ -1,4 +1,4 @@
-# Environment Configuration
+# Home Sweet ~/: Essential Tools for the Cozy Terminal Dweller
 
 The following environment configuration is based on [Debian 13
 (Trixie)](https://www.debian.org/releases/trixie/).
@@ -25,7 +25,8 @@ sudo apt install \
     pari-gp \
     ripgrep \
     taskwarrior \
-    tmux
+    tmux \
+    tree
 ```
 
 ## Usage
