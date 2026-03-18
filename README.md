@@ -20,6 +20,7 @@ sudo apt install \
     fzf \
     git \
     htop \
+    jq \
     mutt \
     neovim \
     pari-gp \
