@@ -1,4 +1,5 @@
 alias cl="clear"
+alias e="emacs -nw"
 alias le="less"
 alias oups="cd && clear"
 alias ls="ls -lhF --color"
