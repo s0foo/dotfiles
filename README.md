@@ -23,6 +23,7 @@ sudo apt install \
     jq \
     mutt \
     neovim \
+    nodejs \
     pari-gp \
     ripgrep \
     taskwarrior \
