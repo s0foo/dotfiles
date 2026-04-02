@@ -17,18 +17,25 @@ adduser <username> sudo
 ```bash
 sudo apt install \
     emacs \
-    fzf \
     git \
     htop \
     jq \
     mutt \
-    neovim \
     nodejs \
     pari-gp \
     ripgrep \
     taskwarrior \
     tmux \
     tree
+```
+
+### Install Neovim from sources
+
+```
+sudo apt install cmake
+git clone --depth 1 -branch v0.12.0 https://github.com/neovim/neovim.git
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
 ```
 
 ## Usage
