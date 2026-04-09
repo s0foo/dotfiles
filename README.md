@@ -25,6 +25,7 @@ sudo apt install \
     pari-gp \
     ripgrep \
     taskwarrior \
+    texlive-full \
     tmux \
     tree
 ```
