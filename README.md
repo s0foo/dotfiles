@@ -12,24 +12,6 @@ apt install sudo
 adduser <username> sudo
 ```
 
-## Packages List
-
-```bash
-sudo apt install \
-    emacs \
-    git \
-    htop \
-    jq \
-    mutt \
-    nodejs \
-    pari-gp \
-    ripgrep \
-    taskwarrior \
-    texlive-full \
-    tmux \
-    tree
-```
-
 ## Usage
 
 To apply this configuration:

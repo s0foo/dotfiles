@@ -20,6 +20,21 @@ command="$1"
 shift
 
 case "$command" in
+    packages)
+        sudo apt install \
+            emacs \
+            git \
+            htop \
+            jq \
+            mutt \
+            nodejs \
+            pari-gp \
+            ripgrep \
+            taskwarrior \
+            texlive-full \
+            tmux \
+            tree
+        ;;
     configure)
         echo "Deploying dotfiles from $DOTFILES_DIR..."
 
