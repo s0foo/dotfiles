@@ -7,6 +7,7 @@ usage() {
     echo "Usage: $0 <command> [args]"
     echo ""
     echo "Commands:"
+    echo "  packages         Install regular packages"
     echo "  configure        Deploy dotfiles to \$HOME"
     echo "  nvim <tag>       Build and install Neovim from source"
     exit 1
@@ -22,10 +23,12 @@ shift
 case "$command" in
     packages)
         sudo apt install \
+            cmake \
             emacs \
             git \
             htop \
             jq \
+            make \
             mutt \
             nodejs \
             pari-gp \
