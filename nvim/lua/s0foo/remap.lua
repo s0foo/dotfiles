@@ -17,3 +17,8 @@ vim.keymap.set("n", "<leader>sv", ":vsplit<CR><C-w>w")
 vim.keymap.set('n', '<leader>sc', function()
   vim.cmd('edit ~/.scratch')
 end, { desc = "Open scratch file" })
+
+vim.keymap.set('n', '<leader>td', function()
+  local date = os.date('%Y-%m-%d')
+  vim.api.nvim_put({ date }, 'c', true, true)
+end, { desc = "Insert current date" })
