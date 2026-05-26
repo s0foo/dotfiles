@@ -9,6 +9,10 @@ alias ta="task add"
 alias up="sudo apt update && sudo apt install -y"
 alias v="nvim"
 
+# Docker
+alias dps="docker ps"
+alias dstop="docker stop $(docker ps -q)"
+
 # Edition
 alias aled="nvim $HOME/.bash_aliases"
 alias rced="nvim $HOME/.bashrc"
