@@ -8,7 +8,16 @@ HISTFILESIZE=2000
 shopt -s checkwinsize
 shopt -s globstar
 
-PS1='user@local:\w> '
+# Git branch for prompt (shows detached HEAD as short hash)
+__ps1_git_branch() {
+    local branch
+    branch=$(git symbolic-ref --short HEAD 2>/dev/null) \
+        || branch=$(git rev-parse --short HEAD 2>/dev/null) \
+        || return
+    echo " ($branch)"
+}
+
+PS1='\[\e[0;32m\]\u@\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0;33m\]$(__ps1_git_branch)\[\e[0m\] ❯ '
 
 source ~/.bash_aliases
 
