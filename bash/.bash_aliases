@@ -11,7 +11,8 @@ alias v="nvim"
 
 # Docker
 alias dps="docker ps"
-alias dstop="docker stop $(docker ps -q)"
+alias dst='docker stop $(docker ps -q)'
+alias dcl="docker system prune -a -f && docker volume prune -a -f && docker image prune -a -f"
 
 # Edition
 alias aled="nvim $HOME/.bash_aliases"
