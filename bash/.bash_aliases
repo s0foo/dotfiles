@@ -9,6 +9,9 @@ alias ta="task add"
 alias up="sudo apt update && sudo apt install -y"
 alias v="nvim"
 
+# Workflow
+alias clo="claude"
+
 # Docker
 alias dps="docker ps"
 alias dst='docker stop $(docker ps -q)'
