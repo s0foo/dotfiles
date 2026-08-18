@@ -10,6 +10,7 @@ usage() {
     echo "  packages         Install regular packages"
     echo "  configure        Deploy dotfiles to \$HOME"
     echo "  nvim <tag>       Build and install Neovim from source"
+    echo "  tmux <tag>       Build and install tmux from source"
     exit 1
 }
 
@@ -23,6 +24,8 @@ shift
 case "$command" in
     packages)
         sudo apt install \
+            autoconf \
+            automake \
             cmake \
             emacs \
             git \
@@ -32,10 +35,10 @@ case "$command" in
             mutt \
             nodejs \
             pari-gp \
+            pkg-config \
             ripgrep \
             taskwarrior \
             texlive-full \
-            tmux \
             tree
         ;;
     configure)
@@ -75,6 +78,23 @@ case "$command" in
         git clone --depth 1 -b "$TAG" https://github.com/neovim/neovim.git "$BUILD_DIR"
         make -C "$BUILD_DIR" CMAKE_BUILD_TYPE=RelWithDebInfo
         sudo make -C "$BUILD_DIR" install
+        ;;
+    tmux)
+        if [ $# -ne 1 ]; then
+            echo "Usage: $0 tmux <tag>" >&2
+            exit 1
+        fi
+        TAG="$1"
+        BUILD_DIR="/tmp/tmux"
+
+        cleanup() {
+            rm -rf "$BUILD_DIR"
+        }
+        trap cleanup EXIT
+
+        rm -rf "$BUILD_DIR"
+        git clone --depth 1 -b "$TAG" https://github.com/tmux/tmux.git "$BUILD_DIR"
+        (cd "$BUILD_DIR" && sh autogen.sh && ./configure && make && sudo make install)
         ;;
     *)
         echo "Unknown command: $command" >&2
