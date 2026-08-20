@@ -11,6 +11,7 @@ alias v="nvim"
 
 # Workflow
 alias clo="claude"
+alias wiki="v $HOME/wiki/."
 
 # Docker
 alias dps="docker ps"
