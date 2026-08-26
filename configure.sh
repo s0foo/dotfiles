@@ -28,9 +28,11 @@ case "$command" in
             automake \
             cmake \
             emacs \
+            fd-find \
             git \
             htop \
             jq \
+            luarocks \
             make \
             mutt \
             nodejs \
