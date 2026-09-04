@@ -1,3 +1,6 @@
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 alias cl="clear"
 alias e="emacs -nw"
 alias le="less"
